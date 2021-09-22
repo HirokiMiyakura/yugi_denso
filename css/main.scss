@@ -1,0 +1,44 @@
+// 実績
+
+.jisseki-container {
+  margin: 40px auto;
+
+  &-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jisseki-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      flex-basis: 30%;
+      margin: 2% 0;
+    }
+  }
+}
+
+// 会社概要
+
+.normal-table {
+  width: 100%;
+
+  tr {
+    th {
+      display: block;
+      padding: 16px;
+      text-align: left;
+      background-color: #efefef;
+    }
+
+    td {
+      display: block;
+      padding: 16px;
+    }
+  }
+}

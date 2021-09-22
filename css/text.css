@@ -1,0 +1,40 @@
+.service-ttl {
+  padding: 0 16px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-style: italic;
+  color: #094067;
+  color: #000;
+  text-align: center;
+}
+
+.service-ttl span {
+  font-size: 0.6em;
+  font-style: italic;
+  font-weight: 100;
+  color: #ef4565;
+}
+
+.service-ttl span::before {
+  white-space: pre;
+  content: '\A';
+}
+
+@media screen and (min-width: 768px) {
+  .service-ttl {
+    margin-bottom: 80px;
+    font-size: 3rem;
+  }
+  .service-ttl span {
+    font-size: 0.6em;
+  }
+}
+
+p {
+  color: #5f6c7b;
+}
+
+.text-white {
+  color: #fff;
+}
+/*# sourceMappingURL=text.css.map */

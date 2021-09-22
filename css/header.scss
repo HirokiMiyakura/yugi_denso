@@ -1,0 +1,238 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1040px;
+  padding: 0 16px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: static;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.header-logo {
+  line-height: 1;
+
+  img {
+    width: auto;
+    height: 122px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header-logo {
+    // width: 250px;
+  }
+}
+
+.header-btn {
+  z-index: 500;
+  display: block;
+  width: 32px;
+  height: 20px;
+  padding-right: 5px;
+  background: none;
+}
+
+.header-btn span {
+  position: relative;
+  display: block;
+  height: 2px;
+  background: #333;
+  transition: all 0.3s;
+}
+
+.header-btn span::before,
+.header-btn span::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background: #333;
+  transition: all 0.3s;
+}
+
+.header-btn span::before {
+  top: -10px;
+}
+
+.header-btn span::after {
+  bottom: -10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+}
+
+.header-gnav {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  // margin-top: 62px;
+  margin-top: 122px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .header-gnav {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+.header-gnav-list {
+  list-style-type: none;
+  border-top: 1px solid #efefef;
+}
+
+.header-gnav-list a {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #094067;
+  text-decoration: none;
+  border-bottom: 1px solid #efefef;
+}
+
+.header-gnav-list a span {
+  margin-right: 8px;
+  font-size: 22px;
+  color: #459209;
+}
+
+.header-gnav-list a span.header-gnav-access {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-gnav-list {
+    display: flex;
+    border: none;
+  }
+
+  .header-gnav-list a {
+    padding: 5px;
+    margin-left: 16px;
+    border: none;
+  }
+}
+
+.is-openMenu .header-btn span {
+  background: transparent;
+}
+
+.is-openMenu .header-btn span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.is-openMenu .header-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.is-openMenu .header-gnav {
+  right: 0;
+}
+
+.main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65vh;
+  background-color: #3da9fc;
+  background-blend-mode: multiply;
+
+  &.top {
+    background: url('../img/header/main.jpg') no-repeat center center/cover;
+  }
+
+  &.service {
+    background: url('../img/header/service-main-min.jpg') no-repeat center
+      center/cover;
+    background-color: #9f9f9f;
+    background-blend-mode: multiply;
+  }
+
+  &.achivements {
+    background: url('../img/header/achivements-main-min.jpg') no-repeat center
+      center/cover;
+    background-color: #9f9f9f;
+    background-blend-mode: multiply;
+  }
+
+  &.blogs {
+    background: url('../img/header/blogs-main-min.jpg') no-repeat center
+      center/cover;
+    background-color: #9f9f9f;
+    background-blend-mode: multiply;
+  }
+
+  &.company {
+    background: url('../img/header/company-main-min.jpg') no-repeat center
+      center/cover;
+    background-color: #9f9f9f;
+    background-blend-mode: multiply;
+  }
+
+  &.contact {
+    background: url('../img/header/contact-main-min.jpg') no-repeat center
+      center/cover;
+    background-color: #9f9f9f;
+    background-blend-mode: multiply;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-image {
+    height: 65vh;
+  }
+}
+
+.main-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 122px 24px 0;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 2px 3px #222;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-description {
+    padding-top: 0;
+    font-size: 2.75rem;
+  }
+}

@@ -1,0 +1,47 @@
+.jisseki-container {
+  margin: 40px auto;
+}
+
+.jisseki-container-item {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .jisseki-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jisseki-container-item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin: 2% 0;
+  }
+}
+
+.normal-table {
+  width: 100%;
+}
+
+.normal-table tr th {
+  display: block;
+  padding: 16px;
+  text-align: left;
+  background-color: #efefef;
+}
+
+.normal-table tr td {
+  display: block;
+  padding: 16px;
+}
+/*# sourceMappingURL=main.css.map */

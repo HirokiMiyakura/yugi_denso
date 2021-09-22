@@ -1,0 +1,15 @@
+input,
+textarea {
+  width: 100%;
+  padding: 16px 24px;
+  margin: 24px 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+input[type='submit'] {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: 4px;
+  background-color: #ef4565;
+}
