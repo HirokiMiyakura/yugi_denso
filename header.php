@@ -63,7 +63,7 @@
   </div>
 <?php elseif ( is_page('company') ) : ?>
   <div class="main-image company">
-    <h2 class="main-description">会社情報です。<br class="pc">所在地は自然豊かな群馬県藤岡市鬼石です。</h2>
+    <h2 class="main-description">会社情報です。<br class="pc">所在地は群馬県藤岡市です。</h2>
   </div>
 <?php elseif ( is_page('contact') ) : ?>
   <div class="main-image contact">
